@@ -1,0 +1,69 @@
+# Ktra
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package b4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author MSI-PC
+ */
+public class PhongMay {
+    private String maPhong;
+    private String soPhong;
+    private String Trangthai;
+    private String SoLuongMay;
+    
+    public PhongMay(String maPhong,String soPhong,String Trangthai,String SoLuongMay) {
+        this.maPhong=maPhong;
+        this.soPhong = soPhong;
+        this.Trangthai = Trangthai;
+        this.SoLuongMay = SoLuongMay;
+    }
+    
+    public String getmaPhong() {
+        return maPhong;
+    }
+    public void setmaPhong(String maPhong) {
+        this.maPhong = maPhong;
+    }
+    public String getsoPhong() {
+        return soPhong;
+    }
+    public void setsoPhong(String soPhong) {
+        this.soPhong = soPhong;
+    }
+    public String getTrangthai() {
+        return Trangthai;
+    }
+    public void setTrangthai(String Trangthai) {
+        this.Trangthai =Trangthai;
+    }
+    public String getSoLuongMay() {
+        return SoLuongMay;
+    }
+    public void setSoLuongMay(String SoLuongMay) {
+        this.SoLuongMay = SoLuongMay;
+    }
+    public void nhap() {
+        Scanner sc = new Scanner(System.in); // lấy thông tin
+        System.out.print("maPhong: ");
+        this.maPhong = sc.nextLine();
+        System.out.print("soPhong: ");
+        this.soPhong =soPhong;     
+        System.out.print("Trangthai: ");
+        this.Trangthai = Trangthai;
+        System.out.print("So Luong May: ");
+        this.SoLuongMay = SoLuongMay;
+        
+    }
+    public void hien() {
+        System.out.print("{" + "maPhong=" + maPhong  +",+ soPhong = " + soPhong+ ", Trangthai=" + Trangthai + ", SoLuongMay=" + SoLuongMay +  ", ");
+    }
+        
+
+}
+
