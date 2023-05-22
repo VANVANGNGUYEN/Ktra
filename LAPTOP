@@ -1,0 +1,62 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package b4;
+
+/**
+ *
+ * @author MSI-PC
+ */
+import java.util.Scanner;
+public class Laptop extends PhongMay{
+    private String maLaptop;
+    private String SoMay;
+    private String LoaiLapTop;
+    public Laptop() {
+        super();
+    }
+    
+    public Laptop(String maLapTopLoaiLaptop,String SoMay,String LoaiLapTop,String maPhong,String soPhong, String Trangthai, String SoLuongMay) {
+        super(maPhong, soPhong, Trangthai, SoLuongMay);
+        this.SoMay = SoMay;
+        this.LoaiLapTop = LoaiLapTop;
+    }
+    public String getmaLaptop() {
+        return maLaptop;
+    }
+    public void setmaLaptop(String maLaptop) {
+        this.maLaptop = maLaptop;
+    }
+    public String getSoMay() {
+        return SoMay;
+    }
+    public void setSoMay(String SoMay) {
+        this.SoMay=SoMay;
+    }
+    public String getLoaiLapTop() {
+        return LoaiLapTop;
+    }
+    public void setLoaiLapTop(String LoaiLapTop) {
+        this.LoaiLapTop = LoaiLapTop;
+    }
+    @Override
+    public void hien() {
+        super.hien();
+        System.out.println("maLaptop=" + maLaptop + ", SoMay=" + SoMay + ", LoaiLapTop=" + LoaiLapTop  + '}');
+    }
+    @Override
+    public void nhap() {
+        Scanner sc = new Scanner(System.in);
+        super.nhap();
+        System.out.print("ma Laptop: ");
+        this.maLaptop = sc.nextLine();
+        System.out.print("So May: ");
+        this.SoMay = sc.nextLine();
+        System.out.print("Loai Lap Top: ");
+        this.LoaiLapTop = sc.nextLine();
+    
+    
+    
+}
+}
