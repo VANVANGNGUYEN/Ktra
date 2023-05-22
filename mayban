@@ -1,0 +1,78 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package b4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author MSI-PC
+ */
+import java.util.Scanner;
+public class MayBan extends PhongMay {
+     private String maMayban;
+    private String SoMayban;
+    private String LoaiMayban;
+    private String KieuMayban;
+    
+    public MayBan(String maMayban,String SoMayBan,String LoaiMayban,String KieuMayban,String maPhong, String soPhong, String Trangthai, String SoLuongMay) {
+        super(maPhong, soPhong, Trangthai, SoLuongMay);
+        this.maMayban = maMayban;
+        this.SoMayban = SoMayban;
+        this.LoaiMayban=LoaiMayban;
+        this.KieuMayban = KieuMayban;
+    }
+       
+    public String getmaMayban() {
+        return maMayban;
+    }
+    public void setmaMayban(String maMayban) {
+        this.maMayban = maMayban;
+    }
+    public String getSoMayban() {
+        return SoMayban;
+    }
+    public void setSoMayban(String SoMayban) {
+        this.SoMayban=SoMayban;
+    }
+    public String getLoaiMayban() {
+        return LoaiMayban;
+    }
+    public void setLoaiMayban(String LoaiMayban) {
+        this.LoaiMayban = LoaiMayban;
+    }
+    
+    public String getKieuMayban() {
+        return KieuMayban;
+    }
+    public void setKieuMayban(String KieuMayban) {
+        this.KieuMayban = KieuMayban;
+    }
+    
+       
+    @Override
+    public void nhap() {
+        Scanner sc = new Scanner(System.in);
+        super.nhap();
+        System.out.print("ma Mayban: ");
+        this.maMayban = sc.nextLine();
+        System.out.print("So May ban: ");
+        this.SoMayban = sc.nextLine();
+        System.out.print("Loai May ban: ");
+        this.LoaiMayban = sc.nextLine();
+        System.out.print("Kieu May ban: ");
+        this.KieuMayban = sc.nextLine();
+    }
+       @Override
+     public void hien() {
+        super.hien();
+        System.out.println("maMayban=" + maMayban + ", SoMayban=" + SoMayban + ", LoaiMayban=" + LoaiMayban  + ", KieuMayban=" +KieuMayban+'}');
+     }
+}
+    
+
+    
+   
+
